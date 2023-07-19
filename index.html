@@ -46,7 +46,7 @@
                 >
                   <ul class="nav navbar-nav navbar-nav-centered">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index.html" onclick="javascript: window.botpressWebChat.store.resetSession();" >Home</a>
+                      <a class="nav-link" href="index.html" onclick="javascript: $zoho.salesiq.reset();" >Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="laws.html">Browse Laws</a>
@@ -112,7 +112,7 @@
                         DamaKita:<br />sentiment analysis
                       </div>
                       <a href="#" class="hbtn hbtn-primary hbtn-shape"
-                        ><span  onclick="javascript: window.botpressWebChat.store.resetSession();" >Learn More</span></a
+                        ><span  onclick="javascript: $zoho.salesiq.reset();" >Learn More</span></a
                       >
                     </div>
                   </div>
@@ -127,7 +127,7 @@
                     <div class="col-sm-7">
                       <div class="b-text">Nais mo bang<br />pag-usapan?</div>
                       <a href="#" class="hbtn hbtn-primary hbtn-shape" 
-                        > <span onclick="javascript: window.botpressWebChat.store.resetSession();" title="Chat">Filipino</span></a
+                        > <span onclick="javascript: $zoho.salesiq.reset();" title="Chat">Filipino</span></a
                       >
                     </div>
                   </div>
@@ -142,7 +142,7 @@
                     <div class="col-sm-7">
                       <div class="b-text">Want to<br />talk it out?</div>
                       <a href="#" class="hbtn hbtn-primary hbtn-shape"
-                        ><span onclick="javascript: window.botpressWebChat.store.resetSession();" title="Chat">English</span></a
+                        ><span onclick="javascript: $zoho.salesiq.reset();" title="Chat">English</span></a
                       >
                     </div>
                   </div>
@@ -191,7 +191,7 @@
                 <div class="icon"><img src="images/server1.svg" alt="" /></div>
               </div>
               <div class="pricing-button">
-                <a href="#" title="Chat">Get Started!</a>
+                <a href="#" onclick="$zoho.salesiq.floatwindow.visible('show')" title="Chat">Get Started!</a>
               </div>
             </div>
           </div>
@@ -328,35 +328,17 @@
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
 <script>
   setTimeout(function () {
     $('.loader_bg').fadeToggle();
   }, 900);
 </script>
-
-</script>
-<script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
-<script>
-  window.botpressWebChat.init({
-      "composerPlaceholder": "Chat with DaKi",
-      "botConversationDescription": "Your friendly sentiment ChatBot",
-      "botId": "c36aec0c-dee1-4fd8-8643-17632f37356a",
-      "hostUrl": "https://cdn.botpress.cloud/webchat/v0",
-      "messagingUrl": "https://messaging.botpress.cloud",
-      "clientId": "c36aec0c-dee1-4fd8-8643-17632f37356a",
-      "botName": "DaKi",
-      "stylesheet": ".gradient-custom { /* fallback for old browsers */ background: #fccb90;  /* Chrome 10-25, Safari 5.1-6 */ background: -webkit-linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1));  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ background: linear-gradient(to bottom right, rgba(252, 203, 144, 1), rgba(213, 126, 235, 1)) }  .mask-custom { background: rgba(24, 24, 16, .2); border-radius: 2em; backdrop-filter: blur(15px); border: 2px solid rgba(255, 255, 255, 0.05); background-clip: padding-box; box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03); }",
-      "useSessionStorage": false,
-      "enableConversationDeletion": true
-  });
-</script>
+    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/c36aec0c-dee1-4fd8-8643-17632f37356a/webchat/config.js" defer></script>
     <script src="js/custom-file-input.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
-    
   </body>
 </html>
