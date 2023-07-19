@@ -46,7 +46,7 @@
                 >
                   <ul class="nav navbar-nav navbar-nav-centered">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index.html" onclick="javascript: localStorage.removeItem('bp/dialogId');" >Home</a>
+                      <a class="nav-link" href="index.html" onclick="javascript: window.botpressWebChat.store.resetSession();" >Home</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="laws.html">Browse Laws</a>
@@ -112,7 +112,7 @@
                         DamaKita:<br />sentiment analysis
                       </div>
                       <a href="#" class="hbtn hbtn-primary hbtn-shape"
-                        ><span  onclick="javascript: localStorage.removeItem('bp/dialogId');" >Learn More</span></a
+                        ><span  onclick="javascript: window.botpressWebChat.store.resetSession();" >Learn More</span></a
                       >
                     </div>
                   </div>
@@ -127,7 +127,7 @@
                     <div class="col-sm-7">
                       <div class="b-text">Nais mo bang<br />pag-usapan?</div>
                       <a href="#" class="hbtn hbtn-primary hbtn-shape" 
-                        > <span onclick="javascript: localStorage.removeItem('bp/dialogId');" title="Chat">Filipino</span></a
+                        > <span onclick="javascript: window.botpressWebChat.store.resetSession();" title="Chat">Filipino</span></a
                       >
                     </div>
                   </div>
@@ -142,7 +142,7 @@
                     <div class="col-sm-7">
                       <div class="b-text">Want to<br />talk it out?</div>
                       <a href="#" class="hbtn hbtn-primary hbtn-shape"
-                        ><span onclick="javascript: localStorage.removeItem('bp/dialogId');" title="Chat">English</span></a
+                        ><span onclick="javascript: window.botpressWebChat.store.resetSession();" title="Chat">English</span></a
                       >
                     </div>
                   </div>
@@ -191,7 +191,7 @@
                 <div class="icon"><img src="images/server1.svg" alt="" /></div>
               </div>
               <div class="pricing-button">
-                <a href="#" onclick="$zoho.salesiq.floatwindow.visible('show')" title="Chat">Get Started!</a>
+                <a href="#" title="Chat">Get Started!</a>
               </div>
             </div>
           </div>
@@ -334,10 +334,7 @@
     $('.loader_bg').fadeToggle();
   }, 900);
 </script>
-<script>
-  window.onload = function() {
-    localStorage.removeItem('bp/dialogId');
-  };
+
 </script>
 <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
 <script>
@@ -354,7 +351,6 @@
       "enableConversationDeletion": true
   });
 </script>
-    <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
     <script src="https://mediafiles.botpress.cloud/c36aec0c-dee1-4fd8-8643-17632f37356a/webchat/config.js" defer></script>
     <script src="js/custom-file-input.js"></script>
     <script src="js/jquery.min.js"></script>
